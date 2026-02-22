@@ -14,26 +14,21 @@ body{
 .hero{
   position:relative;
   background:url('banner.jpg') no-repeat center/cover;
-  height:90vh;
-  color:#fff;
+  height:90vh;color:#fff;
 }
 .overlay{
-  background:rgba(0,0,0,0.45); /* jaśniejsze przyciemnienie */
+  background:rgba(0,0,0,0.45); /* Jaśniejsze przyciemnienie */
   height:100%;
 }
 .navbar{
-  position:fixed;
-  top:0;width:100%;
+  position:fixed;top:0;width:100%;
   background:rgba(0,0,0,0.9);
   border-bottom:2px solid #FFD700;
   display:flex;justify-content:space-between;align-items:center;
-  padding:15px 40px;
-  z-index:100;
+  padding:15px 40px;z-index:100;
 }
 .logo{height:45px;width:auto;}
-.menu{
-  display:flex;list-style:none;gap:30px;margin:0;
-}
+.menu{display:flex;list-style:none;gap:30px;margin:0;}
 .menu li a{
   color:#FFD700;text-decoration:none;font-weight:bold;
   text-transform:uppercase;font-size:1.2rem;
@@ -45,9 +40,7 @@ body{
   transform:translate(-50%,-50%);
   text-align:center;
 }
-.hero-text h1{
-  font-size:3.2rem;color:#FFD700;text-shadow:2px 2px 8px #000;
-}
+.hero-text h1{font-size:3.2rem;color:#FFD700;text-shadow:2px 2px 8px #000;}
 .hero-text p{font-size:1.3rem;color:#fff;}
 
 /* ---------- SEKCJE ---------- */
@@ -60,15 +53,20 @@ section{
   margin:40px auto;
 }
 .section-dark{background:#111;}
-h2{color:#FFD700;margin-bottom:15px;}
-.center-title{text-align:center;font-size:2rem;margin-bottom:25px;}
-.about-text{text-align:justify;font-size:1.05rem;}
+h2{
+  color:#FFD700;
+  margin-bottom:15px;
+  text-align:left;
+  font-size:2rem;
+}
+#o-nas p,
+ul{margin-left:0;text-align:left;}
 
 /* ---------- LISTY ---------- */
 ul{list-style:none;padding-left:0;}
 ul li::before{content:"✔ ";color:#FFD700;}
 
-/* ---------- KONTAKT + SPONSORING ---------- */
+/* ---------- KONTAKT + SPONSOR ---------- */
 .section-contact{
   display:flex;
   justify-content:center;
@@ -85,9 +83,7 @@ ul li::before{content:"✔ ";color:#FFD700;}
   flex:1 1 45%;
   min-width:300px;
 }
-.contact-info h2{
-  color:#FFD700;
-}
+.contact-info h2{color:#FFD700;text-align:left;}
 .contact-info p strong{color:#FFD700;}
 .sponsor-side{
   flex:1 1 45%;
@@ -107,7 +103,8 @@ ul li::before{content:"✔ ";color:#FFD700;}
 .sponsor-thumb img:hover{transform:scale(1.05);}
 .socials{
   margin-top:10px;
-  display:flex;gap:20px;
+  display:flex;
+  gap:20px;
   font-size:1.1em;
 }
 .socials a{
@@ -152,10 +149,8 @@ ul li::before{content:"✔ ";color:#FFD700;}
 .close{
   position:absolute;
   top:15px;right:25px;
-  font-size:2rem;
-  color:#FFD700;
-  cursor:pointer;
-  transition:color .3s;
+  font-size:2rem;color:#FFD700;
+  cursor:pointer;transition:color .3s;
 }
 .close:hover{color:#fff;}
 
