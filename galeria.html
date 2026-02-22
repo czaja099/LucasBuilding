@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria – LucasBuilding</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Pasek podstrony -->
+  <nav class="navbar subpage">
+    <div class="logo-area">
+      <a href="index.html"><img src="logo.png" alt="LucasBuilding logo" class="logo"></a>
+    </div>
+    <ul class="menu">
+      <li><a href="index.html">O nas</a></li>
+      <li><a href="uslugi.html">Usługi</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="realizacje.html">Realizacje</a></li>
+      <li><a href="index.html#kontakt">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sekcja galerii -->
+  <section class="container section-light">
+    <h2>Galeria</h2>
+    <p>
+      Zobacz zdjęcia z Gali <strong>AFERA</strong>, której sponsorem była firma Lucas Building.  
+      Kliknij miniaturkę, aby otworzyć podgląd ze zdjęciem i opis.
+    </p>
+
+    <div class="gallery-folder">
+      <h3>📸 Gala AFERA</h3>
+      <div class="gallery">
+        <img src="afera1.jpg" alt="Gala AFERA 1" data-desc="Lucas Building – sponsor wydarzenia AFERA 2024">
+        <img src="afera2.jpg" alt="Gala AFERA 2" data-desc="Zespół Lucas Building na gali sportów walk AFERA">
+        <img src="afera3.jpg" alt="Gala AFERA 3" data-desc="Wręczenie nagrody partnera wydarzenia">
+        <img src="afera4.jpg" alt="Gala AFERA 4" data-desc="Publiczność podczas gali sportów walk AFERA">
+        <img src="afera5.jpg" alt="Gala AFERA 5" data-desc="Strefa sponsorów z banerem Lucas Building">
+        <img src="afera6.jpg" alt="Gala AFERA 6" data-desc="Zawodnicy wchodzący na ring AFERA 2024">
+        <img src="afera7.jpg" alt="Gala AFERA 7" data-desc="Zespół organizatorki i sponsorzy wydarzenia">
+        <img src="afera8.jpg" alt="Gala AFERA 8" data-desc="Moment po walce głównej – gratulacje i nagrody">
+        <img src="afera9.jpg" alt="Gala AFERA 9" data-desc="Lucas Building na planszy sponsorskiej AFERA">
+      </div>
+    </div>
+  </section>
+
+  <!-- Okno podglądu -->
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="">
+      <div class="desc" id="lightbox-desc"></div>
+    </div>
+    <span class="close">&times;</span>
+  </div>
+
+  <footer>
+    <p>© 2024 Lucas Building – Wszelkie prawa zastrzeżone</p>
+  </footer>
+
+  <script>
+    const imgs = document.querySelectorAll('.gallery img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxDesc = document.getElementById('lightbox-desc');
+    const close = document.querySelector('.close');
+
+    imgs.forEach(img => {
+      img.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = img.src;
+        lightboxDesc.textContent = img.dataset.desc || '';
+      });
+    });
+
+    close.addEventListener('click', () => lightbox.style.display = 'none');
+    lightbox.addEventListener('click', e => { if (e.target === lightbox) lightbox.style.display = 'none'; });
+  </script>
+
+</body>
+</html>
