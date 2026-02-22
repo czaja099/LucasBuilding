@@ -9,70 +9,57 @@
 </head>
 <body>
 
-  <!-- Pasek podstrony -->
-  <nav class="navbar subpage">
-    <div class="logo-area">
-      <a href="index.html"><img src="logo.png" alt="LucasBuilding logo" class="logo"></a>
+  <!-- Stałe menu jak na stronie głównej -->
+  <div class="fixed-bar">
+    <div class="container fixed-bar-content">
+      <a href="index.html#o-nas">O nas</a>
+      <a href="index.html#uslugi">Zakres usług</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="index.html#kontakt">Kontakt</a>
     </div>
-    <ul class="menu">
-      <li><a href="index.html">O nas</a></li>
-      <li><a href="uslugi.html">Usługi</a></li>
-      <li><a href="galeria.html">Galeria</a></li>
-      <li><a href="realizacje.html">Realizacje</a></li>
-      <li><a href="index.html#kontakt">Kontakt</a></li>
-    </ul>
-  </nav>
+  </div>
 
-  <!-- Sekcja galerii -->
+  <!-- Galeria -->
   <section class="container section-light">
     <h2>Galeria</h2>
     <p>
-      Zobacz wybrane zdjęcia z działalności <strong>Lucas Building</strong> – materiały z Gali AFERA, efekty czyszczenia elewacji oraz zrealizowane inwestycje.
-      Kliknij miniaturkę, aby otworzyć podgląd ze zdjęciem i opis.
+      Zobacz wybrane zdjęcia z działalności <strong>Lucas Building</strong> – Gala AFERA, efekty czyszczenia elewacji i ukończone inwestycje.
+      Kliknij miniaturkę, aby zobaczyć podgląd.
     </p>
 
-    <!-- Folder: Gala AFERA -->
     <div class="gallery-folder">
       <h3>📸 Gala AFERA</h3>
       <div class="gallery">
-        <img src="afera1.jpg" alt="Gala AFERA 1" data-desc="Lucas Building – sponsor wydarzenia AFERA 2024.">
-        <img src="afera2.jpg" alt="Gala AFERA 2" data-desc="Zespół Lucas Building na gali sportów walk AFERA.">
-        <img src="afera3.jpg" alt="Gala AFERA 3" data-desc="Wręczenie nagrody partnera wydarzenia.">
-        <img src="afera4.jpg" alt="Gala AFERA 4" data-desc="Publiczność podczas gali sportów walk AFERA.">
-        <img src="afera5.jpg" alt="Gala AFERA 5" data-desc="Strefa sponsorów z banerem Lucas Building.">
-        <img src="afera6.jpg" alt="Gala AFERA 6" data-desc="Zawodnicy wchodzący na ring AFERA 2024.">
-        <img src="afera7.jpg" alt="Gala AFERA 7" data-desc="Zespół organizatorów i sponsorzy wydarzenia.">
-        <img src="afera8.jpg" alt="Gala AFERA 8" data-desc="Moment po walce głównej – gratulacje i nagrody.">
-        <img src="afera9.jpg" alt="Gala AFERA 9" data-desc="Lucas Building na planszy sponsorskiej AFERA.">
+        <img src="afera1.jpg" alt="AFERA 1" data-desc="Sponsoring Gali Sportów Walk AFERA – Lucas Building 2024.">
+        <img src="afera2.jpg" alt="AFERA 2" data-desc="Zespół Lucas Building na gali AFERA.">
+        <img src="afera3.jpg" alt="AFERA 3" data-desc="Ceremonia wręczenia podziękowań.">
+        <img src="afera4.jpg" alt="AFERA 4" data-desc="Publiczność podczas wydarzenia AFERA.">
+        <img src="afera5.jpg" alt="AFERA 5" data-desc="Banner Lucas Building w strefie sponsorów.">
+        <img src="afera6.jpg" alt="AFERA 6" data-desc="Zawodnicy wchodzący na ring.">
+        <img src="afera7.jpg" alt="AFERA 7" data-desc="Sponsorzy wydarzenia – Lucas Building wśród partnerów.">
+        <img src="afera8.jpg" alt="AFERA 8" data-desc="Zakończenie gali – wyróżnienia.">
+        <img src="afera9.jpg" alt="AFERA 9" data-desc="Lucas Building – partner wydarzenia.">
       </div>
     </div>
 
-    <!-- Folder: Przed i po myciu elewacji -->
     <div class="gallery-folder">
       <h3>🏗️ Przed i po myciu elewacji</h3>
-      <p>
-        Czystość elewacji to nie tylko estetyka, ale również ochrona materiałów przed uszkodzeniami i starzeniem. Zobacz efekty naszego czyszczenia:
-      </p>
       <div class="gallery">
-        <img src="clean-placeholder1.jpg" alt="Elewacja przed myciem" data-desc="Elewacja przed czyszczeniem – widoczne zabrudzenia i osady.">
-        <img src="clean-placeholder2.jpg" alt="Elewacja po myciu" data-desc="Po czyszczeniu – elewacja odzyskała świeży kolor i blask.">
+        <img src="clean-placeholder1.jpg" alt="Przed myciem" data-desc="Elewacja przed czyszczeniem – zabrudzenia, osady.">
+        <img src="clean-placeholder2.jpg" alt="Po myciu" data-desc="Po czyszczeniu – efekt świeżości i nowy kolor.">
       </div>
     </div>
 
-    <!-- Folder: Gotowe inwestycje -->
     <div class="gallery-folder">
       <h3>🏠 Gotowe inwestycje</h3>
-      <p>
-        Prezentujemy ukończone projekty wykonane przez nasz zespół – zadbane ściany i wykończenia są najlepszą wizytówką Lucas Building.
-      </p>
       <div class="gallery">
-        <img src="finish-placeholder1.jpg" alt="Gotowa inwestycja 1" data-desc="Zrealizowany dom jednorodzinny – docieplenie i estetyczna elewacja.">
-        <img src="finish-placeholder2.jpg" alt="Gotowa inwestycja 2" data-desc="Nowoczesna inwestycja deweloperska – elewacja w odcieniach szarości i bieli.">
+        <img src="finish-placeholder1.jpg" alt="Inwestycja 1" data-desc="Nowoczesna inwestycja – zakończone prace elewacyjne.">
+        <img src="finish-placeholder2.jpg" alt="Inwestycja 2" data-desc="Dom jednorodzinny – estetyczna elewacja i wykończenia.">
       </div>
     </div>
   </section>
 
-  <!-- Okno podglądu -->
+  <!-- Lightbox -->
   <div id="lightbox" class="lightbox">
     <div class="lightbox-content">
       <img id="lightbox-img" src="" alt="">
@@ -85,7 +72,6 @@
     <p>© 2024 Lucas Building – Wszelkie prawa zastrzeżone</p>
   </footer>
 
-  <!-- Skrypt obsługi galerii -->
   <script>
     const imgs = document.querySelectorAll('.gallery img');
     const lightbox = document.getElementById('lightbox');
@@ -100,7 +86,6 @@
         lightboxDesc.textContent = img.dataset.desc || '';
       });
     });
-
     close.addEventListener('click', () => lightbox.style.display = 'none');
     lightbox.addEventListener('click', e => { if (e.target === lightbox) lightbox.style.display = 'none'; });
   </script>
