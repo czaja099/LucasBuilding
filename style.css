@@ -8,39 +8,59 @@ body{
   line-height:1.6;
   scroll-behavior:smooth;
 }
-.container{width:90%;max-width:1200px;margin:0 auto;}
+.container{width:90%;max-width:1100px;margin:0 auto;}
 
 /* ---------- HERO + MENU ---------- */
 .hero{
   position:relative;
   background:url('banner.jpg') no-repeat center/cover;
-  height:90vh;color:#fff;
+  height:90vh;
+  color:#fff;
 }
 .overlay{
-  background:rgba(0,0,0,0.45); /* Jaśniejsze przyciemnienie */
+  background:rgba(0,0,0,0.4);  /* jaśniejsze przyciemnienie banneru */
   height:100%;
 }
+
+/* Stałe menu (nieprzewijane) */
 .navbar{
-  position:fixed;top:0;width:100%;
   background:rgba(0,0,0,0.9);
   border-bottom:2px solid #FFD700;
-  display:flex;justify-content:space-between;align-items:center;
-  padding:15px 40px;z-index:100;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
 }
 .logo{height:45px;width:auto;}
-.menu{display:flex;list-style:none;gap:30px;margin:0;}
+.menu{
+  display:flex;
+  list-style:none;
+  gap:30px;margin:0;
+  flex-wrap:wrap;
+}
 .menu li a{
-  color:#FFD700;text-decoration:none;font-weight:bold;
-  text-transform:uppercase;font-size:1.2rem;
+  color:#FFD700;
+  text-decoration:none;
+  font-weight:bold;
+  text-transform:uppercase;
+  font-size:1.2rem;
   transition:color .3s;
 }
 .menu li a:hover{color:#fff;}
+
+/* ---------- Baner tekst ---------- */
 .hero-text{
-  position:absolute;top:55%;left:50%;
+  position:absolute;
+  top:55%;
+  left:50%;
   transform:translate(-50%,-50%);
   text-align:center;
 }
-.hero-text h1{font-size:3.2rem;color:#FFD700;text-shadow:2px 2px 8px #000;}
+.hero-text h1{
+  font-size:3.2rem;
+  color:#FFD700;
+  text-shadow:2px 2px 8px #000;
+}
 .hero-text p{font-size:1.3rem;color:#fff;}
 
 /* ---------- SEKCJE ---------- */
@@ -55,14 +75,19 @@ section{
 .section-dark{background:#111;}
 h2{
   color:#FFD700;
-  margin-bottom:15px;
-  text-align:left;
+  margin-bottom:20px;
   font-size:2rem;
+  text-align:left;
 }
-#o-nas p,
-ul{margin-left:0;text-align:left;}
-
-/* ---------- LISTY ---------- */
+.text-wrapper{
+  max-width:100%;
+  word-wrap:break-word;
+}
+p, ul{
+  text-align:left;
+  margin-left:0;
+  font-size:1rem;
+}
 ul{list-style:none;padding-left:0;}
 ul li::before{content:"✔ ";color:#FFD700;}
 
@@ -82,16 +107,13 @@ ul li::before{content:"✔ ";color:#FFD700;}
 .contact-info{
   flex:1 1 45%;
   min-width:300px;
+  text-align:left;
 }
-.contact-info h2{color:#FFD700;text-align:left;}
-.contact-info p strong{color:#FFD700;}
 .sponsor-side{
   flex:1 1 45%;
   min-width:300px;
   text-align:center;
 }
-.sponsor-side h2{color:#FFD700;}
-.sponsor-side p{font-size:1rem;margin-bottom:10px;}
 .sponsor-thumb img{
   width:80%;
   max-width:250px;
@@ -121,9 +143,12 @@ ul li::before{content:"✔ ";color:#FFD700;}
 /* ---------- LIGHTBOX ---------- */
 .lightbox{
   position:fixed;
-  top:0;left:0;width:100%;height:100%;
+  top:0; left:0;
+  width:100%; height:100%;
   background:rgba(0,0,0,0.85);
-  display:none;justify-content:center;align-items:center;
+  display:none;
+  justify-content:center;
+  align-items:center;
   z-index:999;
 }
 .lightbox-content{
@@ -148,12 +173,15 @@ ul li::before{content:"✔ ";color:#FFD700;}
 }
 .close{
   position:absolute;
-  top:15px;right:25px;
-  font-size:2rem;color:#FFD700;
-  cursor:pointer;transition:color .3s;
+  top:15px; right:25px;
+  font-size:2rem;
+  color:#FFD700;
+  cursor:pointer;
+  transition:color .3s;
 }
 .close:hover{color:#fff;}
 
+/* ---------- STOPKA ---------- */
 footer{
   text-align:center;
   background:#000;
@@ -165,9 +193,17 @@ footer{
 
 /* ---------- RESPONSYWNOŚĆ ---------- */
 @media(max-width:768px){
-  .menu{flex-wrap:wrap;gap:10px;justify-content:center;}
-  .contact-box{flex-direction:column;align-items:center;text-align:center;}
-  .lightbox-content{flex-direction:column;}
-  .lightbox-content img,.lightbox-content .desc{width:100%;}
+  .contact-box{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+  }
+  .lightbox-content{
+    flex-direction:column;
+  }
+  .lightbox-content img,
+  .lightbox-content .desc{
+    width:100%;
+  }
   .hero-text h1{font-size:2.4rem;}
 }
