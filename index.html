@@ -9,23 +9,9 @@
 </head>
 <body>
 
-  <!-- Baner i menu -->
+  <!-- Baner -->
   <header class="hero">
     <div class="overlay">
-      <nav class="navbar">
-        <div class="logo-area">
-          <a href="index.html">
-            <img src="logo.png" alt="LucasBuilding logo" class="logo">
-          </a>
-        </div>
-        <ul class="menu">
-          <li><a href="#o-nas">O nas</a></li>
-          <li><a href="#uslugi">Zakres usług</a></li>
-          <li><a href="galeria.html">Galeria</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
-        </ul>
-      </nav>
-
       <div class="hero-text">
         <h1>LucasBuilding</h1>
         <p>Elewacje · Docieplenia · Pomorskie</p>
@@ -33,36 +19,44 @@
     </div>
   </header>
 
-  <!-- O nas -->
+  <!-- Stały pasek menu -->
+  <div class="fixed-bar">
+    <div class="container fixed-bar-content">
+      <a href="#o-nas">O nas</a>
+      <a href="#uslugi">Zakres usług</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+  </div>
+
+  <!-- O NAS -->
   <section id="o-nas" class="container section-light">
     <h2>O nas</h2>
-    <div class="text-wrapper">
-      <p><strong>Lucas Building</strong> to firma z ponad dziesięcioletnim doświadczeniem w branży budowlanej na terenie <strong>Pomorza</strong>. Naszą specjalnością jest <span style="text-decoration:underline;">kompleksowe wykonywanie elewacji i dociepleń budynków jedno‑ i wielorodzinnych</span>.</p>
-
-      <p>Stawiamy na <strong>rzetelność</strong>, <i>dokładność wykonania</i> i pełne zadowolenie klienta. Nasze realizacje to połączenie nowoczesnych technologii z estetyką i trwałością. Każdy projekt traktujemy indywidualnie – od pierwszej konsultacji aż po ostatnie detale wykończenia.</p>
-
-      <p><strong>Współpracujemy</strong> z renomowanymi inwestorami i deweloperami takimi jak <strong>NOOK INVEST</strong>, <strong>MURAPOL</strong> oraz <strong>Pomorskie Domy</strong>. Używamy sprawdzonych systemów marki <strong>CAPAROL</strong>, aby zagwarantować najwyższą jakość i trwałość rozwiązań.</p>
-    </div>
+    <p>
+      <strong>Lucas Building</strong> to firma z ponad dziesięcioletnim doświadczeniem w branży budowlanej na terenie <strong>Pomorza</strong>. Naszą specjalnością jest kompleksowe wykonywanie elewacji i dociepleń budynków jedno‑ i wielorodzinnych.
+      <br><br>
+      Stawiamy na <strong>rzetelność</strong>, <i>dokładność wykonania</i> i pełne zadowolenie klienta. Nasze realizacje to połączenie nowoczesnych technologii z estetyką i trwałością. Każdy projekt traktujemy indywidualnie – od pierwszej konsultacji aż po ostatnie szczegóły wykończeń.
+      <br><br>
+      <strong>Współpracujemy</strong> z renomowanymi inwestorami i deweloperami takimi jak <strong>NOOK INVEST</strong>, <strong>MURAPOL</strong> oraz <strong>Pomorskie Domy</strong>. Używamy sprawdzonych systemów marki <strong>CAPAROL</strong>, które gwarantują jakość i trwałość na lata.
+    </p>
   </section>
 
-  <!-- Zakres usług -->
+  <!-- ZAKRES USŁUG -->
   <section id="uslugi" class="container section-dark">
     <h2>Zakres usług</h2>
-    <div class="text-wrapper">
-      <ul>
-        <li>Wykonywanie elewacji metodą lekką‑mokrą (ręcznie i natryskowo)</li>
-        <li>Docieplenia budynków (styropian, wełna mineralna)</li>
-        <li>Profesjonalne mycie i renowacja elewacji</li>
-        <li>Aplikacja GRAMAPLAST</li>
-        <li>Klejenie imitacji deski na elewacjach</li>
-        <li>Bonie dekoracyjne i wykończenia detali</li>
-        <li>Montaż parapetów zewnętrznych i obróbki blacharskie</li>
-        <li>Hydroizolacje oraz prace w systemach karton‑gips</li>
-      </ul>
-    </div>
+    <ul>
+      <li>Wykonywanie elewacji metodą lekką‑mokrą (ręcznie i natryskowo)</li>
+      <li>Docieplenia budynków (styropian, wełna mineralna)</li>
+      <li>Profesjonalne mycie i renowacja elewacji</li>
+      <li>Aplikacja GRAMAPLAST</li>
+      <li>Klejenie imitacji deski na elewacjach</li>
+      <li>Bonie dekoracyjne i wykończenia detali</li>
+      <li>Montaż parapetów zewnętrznych i obróbki blacharskie</li>
+      <li>Hydroizolacje oraz prace w systemach karton‑gips</li>
+    </ul>
   </section>
 
-  <!-- Kontakt + Sponsoring -->
+  <!-- KONTAKT + SPONSOR -->
   <section id="kontakt" class="container section-contact">
     <div class="contact-box">
       <div class="contact-info">
@@ -80,7 +74,9 @@
 
       <div class="sponsor-side">
         <h2>Nasz sponsoring</h2>
-        <p>Lucas Building z dumą wspiera <strong>Gale Sportów Walk AFERA</strong>. Wspieramy sport, bo w nim odnajdujemy te same wartości – determinację, pasję i zaangażowanie.</p>
+        <p>
+          Lucas Building z dumą wspiera <strong>Gale Sportów Walk AFERA</strong>. Wierzymy w wartości sportu – determinację, pasję i fair play.
+        </p>
         <div class="sponsor-thumb">
           <img src="afera10.jpg" alt="Sponsor Gala AFERA" class="sponsor-img" onclick="openLightbox()">
         </div>
@@ -101,14 +97,14 @@
     <p>© 2024 Lucas Building – Wszelkie prawa zastrzeżone</p>
   </footer>
 
-  <script>
-    function openLightbox(){
-      document.getElementById('lightbox').style.display='flex';
-    }
-    function closeLightbox(){
-      document.getElementById('lightbox').style.display='none';
-    }
-  </script>
+<script>
+function openLightbox(){
+  document.getElementById('lightbox').style.display='flex';
+}
+function closeLightbox(){
+  document.getElementById('lightbox').style.display='none';
+}
+</script>
 
 </body>
 </html>
