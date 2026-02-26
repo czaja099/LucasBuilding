@@ -112,3 +112,48 @@ footer{text-align:center;background:#000;color:#FFD700;padding:20px;font-size:.9
   .lightbox-content img,.lightbox-content .desc{width:100%;}
   .hero-text h1{font-size:2.4rem;}
 }
+.folder-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.folder-header:hover {
+  background: #e8e8e8;
+}
+
+.folder-header img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.gallery-content {
+  display: none;
+  margin-top: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.gallery img {
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
